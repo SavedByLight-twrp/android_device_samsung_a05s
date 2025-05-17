@@ -12,9 +12,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common twrp stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+<<<<<<< HEAD
+=======
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+>>>>>>> branch 'twrp-12.1' of https://github.com/SavedByLight-twrp/android_device_samsung_a05s
 # Inherit from a05s device
 $(call inherit-product, device/samsung/a05s/device.mk)
 
