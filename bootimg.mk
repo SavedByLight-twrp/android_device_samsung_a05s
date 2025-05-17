@@ -1,7 +1,7 @@
 FLASH_IMAGE_TARGET ?= $(PRODUCT_OUT)/recovery.tar
 
 $(INSTALLED_BOOTIMAGE_TARGET): $(MKBOOTIMG) $(INTERNAL_BOOTIMAGE_FILES) $(BOOTIMAGE_EXTRA_DEPS)
-        $(call pretty,"Target boot image: $@")
+        $(call pretty,"target boot image: $@")
         $(hide) $(MKBOOTIMG) --kernel $(call bootimage-to-kernel,$(1)) $(INTERNAL_BOOTIMAGE_ARGS) $(INTERNAL_MKBOOTIMG_VERSION_ARGS) $(BOARD_MKBOOTIMG_ARGS) --output $@
         $(hide) echo -n "SEANDROIDENFORCE" >> $@
         $(hide) $(call assert-max-image-size,$@,$(BOARD_BOOTIMAGE_PARTITION_SIZE),raw)
