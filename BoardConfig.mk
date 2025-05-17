@@ -177,4 +177,3 @@ PRODUCT_FULL_TREBLE := true
 
 # Copy Out
 TARGET_COPY_OUT_VENDOR := vendor
->>>>>>> branch 'twrp-12.1' of https://github.com/SavedByLight-twrp/android_device_samsung_a05s
