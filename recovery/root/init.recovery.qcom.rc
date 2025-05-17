@@ -32,6 +32,8 @@ on init
     mkdir /efs
     mkdir /sec_efs
     start servicemanager
+    setprop prepdecrypt.loglevel 2
+    setprop logd.ready true
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
